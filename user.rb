@@ -1,4 +1,7 @@
+require './calculator.rb'
+
 class User
+  include Calculator
   # クラスプロパティ(static プロパティにあたる?)
   @@name = 'static的な'
   # 定数
@@ -46,7 +49,7 @@ puts user.getName
 puts user2.getName
 
 User.hoge
-
+puts user.sub(1, 2)
 
 __END__
 これ以降は
